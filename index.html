@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Premier League</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fde254f7fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class = "wrapper">
+        <div class="header">
+            <h2>Canada Premier League</h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>Home
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-regular fa-newspaper"></i>News
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Toronto Devils wins the tournament.</a>
+                  <a href="#">Player of the week: John Smith from Kitchener Warriors</a>
+                  <a href="#">Upcoming matches and schedules</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Teams
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="team.html">Toronto Devils</a>
+                    <a href="team.html">Kitchener Warriors</a>
+                    <a href="team.html">Vancouver Gladiators</a>
+                    <a href="team.html">Calgary Lions</a>
+                    <a href="team.html">Montreal Skarks</a>
+                </div>
+            </div>
+            <a href="login.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a>
+        </div> 
+        <div class="sidenav">
+            <div class="side-dropdown">
+                <button class="side-dropbtn">Matches
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="side-dropdown-content">
+                    <a href="#">TD vs KW</a>
+                    <a href="#">CL vs MS</a>
+                    <a href="#">VC vs TD</a>
+                    <a href="#">KW vs CL</a>
+                    <a href="#">MS vs VC</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="dataTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Matches</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "pointsTable">
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h3>Rules</h3>
+                <ul>
+                    <li>Win fetch 2 points</li>
+                    <li>Loss fetch 0 points</li>
+                    <li>Tie/ No Result fetch 1 point</li>
+                    <li>Incase of tie in table NetRunRate will determine the position.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>About Cricket</h3>
+                Cricket, a sport revered as a gentleman's game, is a bat-and-ball contest that transcends boundaries, captivating millions globally. Originating in England, its rich history unfolds through iconic rivalries like the Ashes and legendary players like Sir Don Bradman and Sachin Tendulkar. Played in diverse formats—Test matches, One Day Internationals (ODIs), and the electrifying Twenty20s—cricket offers a spectrum of excitement. From the strategic brilliance of captains to the athleticism of fielders, every aspect contributes to the game's allure. The deafening cheers of the crowd, the sweet sound of bat meeting ball, and the intense nail-biting finishes all contribute to cricket's timeless charm.
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        &copy; 2023 Canada Premier League
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

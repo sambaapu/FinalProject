@@ -1,0 +1,209 @@
+:root {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper .header {
+  background-color: #4D2914;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  position: fixed;
+  height: 12vh;
+  z-index: 999;
+
+}
+.navbar {
+    background: #804322;
+    color: white;
+    height:10vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .wrapper .sidenav {
+    list-style: none;
+    position:fixed;
+    padding: 0;
+    align-items: left;
+    width: 15vw;
+    background-color: #B35F30;
+    margin-top: 22vh;
+    height: 78vh;
+  }
+  .sidenav .side-dropbtn {
+    font-size: 3vh;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 10px;
+    text-decoration: none;
+    font-size: 3vh;
+    color: #818181;
+    display: block;
+  }
+  
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+/* Style page content */
+.wrapper .main-content {
+  padding-left: 20vw;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow:scroll;
+  padding-bottom: 5vw;
+  align-items: center;
+}
+
+.footer {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    width: 100vw;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    max-width: 50vw;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: auto;
+}
+#lineGraph, #barGraph, #pieChart{
+  width:inherit;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 500px) {
+  :root {
+      font-size: 8px;  
+  }
+  .wrapper .sidenav {
+    width: 22vw;
+    height: 78vh;
+  }
+  .wrapper .main-content {
+    padding-left: 30vw;
+    font-size: 8px;
+    margin-right: 5vw;
+  }
+  .sidenav a {
+    font-size: 10px;
+  }
+  .navbar a {
+    font-size: 10px;
+  }
+  .side-dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  .side-dropdown:hover .side-dropdown-content {
+    display: block;
+  }
+}
+

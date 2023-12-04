@@ -1,0 +1,7 @@
+[
+    {"Team": "Toronto Devils", "Matches": 14, "Wins": 10, "Losses": 4, "Points": 20},
+    {"Team": "Kitchener Warriors", "Matches": 14, "Wins": 8, "Losses": 5, "Points": 17},
+    {"Team": "Vancouver Gladiators", "Matches": 14, "Wins": 8, "Losses": 5, "Points": 17},
+    {"Team": "Calgary Lions", "Matches": 14, "Wins": 8, "Losses": 6, "Points": 16},
+    {"Team": "Montreal Skarks", "Matches": 14, "Wins": 7, "Losses": 7, "Points": 14}
+]
